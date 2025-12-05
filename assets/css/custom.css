@@ -1,0 +1,598 @@
+/* ================================
+   Custom CSS – Dainius Eiva CV
+   ================================ */
+
+/* --- 2. Tipografija (šriftai ir antraštės) --- */
+
+body {
+  font-family: 'Monsterrat', sans-serif;
+  color: #ffffff;
+  background-color: #950fee2a;
+}
+
+/* stilius visoms antraštėms */
+h1, h2, h3, h4, h5, h6 {
+  color: #b917da;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  font-family: 'Courier New', monospace;
+}
+
+h5 {
+  font-family: 'Times New Roman', serif;
+}
+
+h6 {
+  font-family: Arial, sans-serif;
+}
+
+
+h1 { font-size: 2.4rem; font-weight: 800; }
+h2 { font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #c30df0; display: inline-block; padding-bottom: 5px; }
+h3 { font-size: 1.4rem; font-weight: 600; color: #66d400; }
+
+
+/* a)  */
+button, .btn, input[type="submit"] {
+  background-color: #0dcaf0;
+  border: none;
+  color: #4800f1;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover, input[type="submit"]:hover {
+  background-color: #ff09a1;
+  color: #cdf80c;
+  transform: scale(1.05);
+}
+
+/* b) */
+a {
+  color: #1792f7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #3fec0b;
+  text-shadow: 0 0 5px #6103f8;
+}
+
+/* c) */
+section {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+
+/* 3. a) Mygtukai + :hover, :active */
+
+button,
+.btn,
+input[type="submit"] {
+  background: linear-gradient(135deg, #00f5a0, #00d9ff);
+  color: #050608;
+  border: none;
+  border-radius: 999px;          /*apvalinti kraštai*/
+  padding: 10px 26px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px rgba(0, 249, 214, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+/* užvedus pele */
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px) scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 249, 214, 0.6);
+}
+
+/* paspaudus (aktyvus) */
+button:active,
+.btn:active,
+input[type="submit"]:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 0 8px rgba(25, 216, 7, 0.4);
+}
+
+/* 3. b) Nuorodos (bendras stilius) */
+
+a {
+  color: #ffd000;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* „underline“ animacija iš apačios */
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #1900ff;
+  transition: width 0.25s ease;
+}
+
+a:hover {
+  color: #ad0a0a;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* paspaudus nuorodą */
+a:active {
+  color: #ffb703;
+}
+
+/* Papildomai – meniu nuorodos, kad dar labiau skirtųsi nuo šablono */
+
+.navmenu a {
+  color: #aa4949;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.navmenu a:hover,
+.navmenu a.active {
+  color: #25cf16;
+}
+
+/* 4a – vienodi viršutiniai / apatiniai tarpai About, Reziume, Portfolio */
+#about .container,
+#resume .container,
+#portfolio .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* vienodas atstumas nuo sekcijos pavadinimo iki turinio */
+#about .section-title,
+#resume .section-title,
+#portfolio .section-title {
+  margin-bottom: 30px;
+}
+
+/* vienodi tarpai tarp „kortelių“ viduje */
+#resume .resume-item {
+  margin-bottom: 20px;
+}
+
+#portfolio .portfolio-item {
+  margin-bottom: 20px;
+}
+
+
+/* 4b – border radius + box-shadow, kad blokai atrodytų kaip kortelės */
+#about .content,
+#resume .resume-item,
+#portfolio .portfolio-item,
+#services .col-lg-4 {
+  background-color: #10162211;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.247);
+  border: 1px solid rgba(255, 255, 255, 0.048);
+}
+
+
+/* 5.1 Komponentas: sekcijų pavadinimai .section-title */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 26px;
+  letter-spacing: 0.15em;
+  color: #00e5ff;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  max-width: 650px;
+  margin: 10px auto 0;
+  color: #cfd8dc;
+}
+
+/* 5.2 Komponentas: profilio nuotrauka kairėje (#header) */
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #0905f0;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+/* ============================
+   SĄRAŠAI: UNORDERED + NESTED
+   ============================ */
+
+.about .content ul {
+  list-style: none;
+  padding-left: 1.8rem;
+}
+
+.about .content ul li {
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+/* Pagrindinio lygio „bullet“ */
+.about .content ul > li::before {
+  content: "";
+  position: absolute;
+  left: -1.2rem;
+  top: 0.7em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-color);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+/* Vidinis (nested) sąrašas – kitoks bullet */
+.about .content ul ul {
+  margin-top: 0.4rem;
+  padding-left: 1.4rem;
+  font-size: 0.95em;
+}
+
+.about .content ul ul li::before {
+  content: "";
+  position: absolute;
+  left: -1.1rem;
+  top: 0.65em;
+  width: 0.55rem;
+  height: 0.35rem;
+  border-radius: 3px;
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ============================
+   NUMERUOTAS SĄRAŠAS SU COUNTER
+   ============================ */
+
+.custom-ol {
+  list-style: none;
+  counter-reset: services-counter;
+  padding-left: 2.5rem;
+  margin: 0;
+}
+
+.custom-ol li {
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.custom-ol li::before {
+  counter-increment: services-counter;
+  content: counter(services-counter) ".";
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+/* ============================
+   PASLAUGŲ LENTELĖ
+   ============================ */
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+/* Vienodi padding + centras */
+.services-table th,
+.services-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+/* Antraštinė eilutė – išskirta */
+.services-table thead th {
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), transparent 30%)
+  );
+  color: var(--contrast-color);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+/* Zebra stilius */
+.services-table tbody tr:nth-child(odd) {
+  background-color: color-mix(in srgb, var(--background-color), transparent 15%);
+}
+
+.services-table tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--background-color), transparent 5%);
+}
+
+/* Hover efektas */
+.services-table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  transition: background-color 0.2s ease-out;
+}
+/* ============================
+   1. SEKCIJŲ FADE-IN ANIMACIJA
+   ============================ */
+
+@keyframes sectionFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* taikoma visoms sekcijoms su klase fade-in-section */
+.fade-in-section {
+  opacity: 0;
+  animation: sectionFadeInUp 0.7s ease-out forwards;
+}
+/* ============================
+   2. HERO ANTRAŠTĖS ANIMACIJA
+   ============================ */
+
+@keyframes titleReveal {
+  0% {
+    opacity: 0;
+    letter-spacing: 0.3em;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0.05em;
+    transform: translateY(0);
+  }
+}
+
+.hero .animate-title {
+  opacity: 0;
+  animation: titleReveal 0.8s ease-out 0.2s forwards;
+}
+/* ============================
+   3. PORTFOLIO KORTELĖS HOVER ANIMACIJA
+   ============================ */
+
+@keyframes portfolioHover {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.portfolio .portfolio-content:hover {
+  animation: portfolioHover 0.45s ease-out forwards;
+}
+/* ============================
+   4. SVETAINĖS KROVIMO (PRELOADER) ANIMACIJA
+   ============================ */
+
+#preloader {
+  /* paliekam full-screen overlay, bet centruojam spinnerį */
+  display: block;
+  background: var(--background-color);
+}
+
+/* vienas besisukantis apskritimas */
+#preloader::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  border-radius: 50%;
+  border: 4px solid color-mix(in srgb, var(--accent-color), transparent 60%);
+  border-top-color: var(--accent-color);
+  border-right-color: var(--accent-color);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: translate(-50%, -50%);
+  animation: preloaderSpin 0.9s linear infinite;
+}
+
+@keyframes preloaderSpin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* ============================
+   5. PREFERS REDUCED MOTION
+   ============================ */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Sekcijų ir hero animacijos – išjungiam */
+  .fade-in-section,
+  .hero .animate-title {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Portfolio hover – be animacijos, tik paprastas efektas */
+  .portfolio .portfolio-content:hover {
+    animation: none !important;
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  }
+
+  /* Preloader – be sukimosi */
+  #preloader::before {
+    animation: none !important;
+  }
+}
+/* PASLAUGŲ SEKCIJOS GRADIENTO ANIMACIJA */
+
+.services-gradient {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;              /* svarbu, kitaip nematysi ::before */
+  color: #f9fafb;
+}
+
+.services-gradient .section-title h2,
+.services-gradient .section-title p {
+  color: #f9fafb;
+}
+
+.services-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    130deg,
+    #0f172a,
+    #1d4ed8,
+    #22c55e,
+    #f97316
+  );
+  background-size: 220% 220%;
+  animation: servicesGradientMove 14s ease-in-out infinite alternate;
+}
+
+@keyframes servicesGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ABOUT SEKCIJOS CSS FIGŪROS */
+
+.about {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;              /* kad figūros būtų už turinio, bet matomos */
+}
+
+.about-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* bendri nustatymai */
+.about-shapes .shape {
+  position: absolute;
+  opacity: 0.22;
+}
+
+/* Apskritimas – plaukioja vertikaliai */
+.shape-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #22c55e;
+  top: -30px;
+  right: 8%;
+  animation: aboutFloat 18s ease-in-out infinite;
+}
+
+/* Kvadratas – sukasi ir šiek tiek keičia dydį */
+.shape-square {
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+  border: 4px solid #3b82f6;
+  bottom: -40px;
+  left: 12%;
+  animation: aboutRotateScale 20s linear infinite;
+}
+
+/* Trikampis – juda įstrižai */
+.shape-triangle {
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 100px solid rgb(204, 11, 146);
+  position: absolute;
+  bottom: 4%;
+  right: 6%;
+  animation: aboutDiagonal 14s ease-in-out infinite;
+}
+
+
+/* Animacijos */
+
+@keyframes aboutFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(28px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes aboutRotateScale {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.12); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes aboutDiagonal {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(-18px, -16px); }
+  100% { transform: translate(0, 0); }
+}
+
+
