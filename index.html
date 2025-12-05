@@ -26,7 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -85,6 +86,40 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Dainius Eiva</h2>
       </div>
+<section id="hero" class="hero section dark-background fade-in-section">
+  <img ...>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="animate-title">Dainius Eiva</h2>
+  </div>
+</section>
+
+<section id="about" class="about section fade-in-section">
+...
+</section>
+
+<section id="skills" class="skills section light-background fade-in-section">
+...
+</section>
+
+<section id="resume" class="resume section fade-in-section">
+...
+</section>
+
+<section id="services" class="services section fade-in-section">
+...
+</section>
+
+<section id="services" class="services section services-gradient">
+  ...
+</section>
+
+<section id="portfolio" class="portfolio section light-background fade-in-section">
+...
+</section>
+
+<section id="contact" class="contact section fade-in-section">
+...
+</section>
 
     </section><!-- /Hero Section -->
 
@@ -113,10 +148,21 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Gimimo diena:</strong> <span>28 Gruodžio 2005</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Svetainė:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Telefono nr.:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Miestas/Šalis:</strong> <span>Vilnius, Lietuva</span></li>
-                </ul>
-              </div>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Telefono nr.:</strong> <span>+123 456 7890</span></li>
+
+    <!-- ČIA NAUJAS ELEMENTAS SU NESTED LIST -->
+    <li>
+      <i class="bi bi-chevron-right"></i> <strong>Domėjimosi sritys:</strong>
+      <span>elektros energetika</span>
+      <ul>
+        <li>PCB kūrimas</li>
+        <li>Kompiuterių surinkimas</li>
+        <li>Lietuvos energetikos politika</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Amžius:</strong> <span>19</span></li>
@@ -133,6 +179,16 @@
         </div>
 
       </div>
+      </div> 
+    </div>
+
+    <!-- CSS FIGŪROS -->
+    <div class="about-shapes">
+      <span class="shape shape-circle"></span>
+      <span class="shape shape-square"></span>
+      <span class="shape shape-triangle"></span>
+    </div>
+
 
     </section><!-- /About Section -->
 
@@ -280,15 +336,16 @@
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
-              <h4>Fotografija ir video montavimas</h4>
-              <h5>Asmeniniai projektai</h5>
-              <p><em>Hobis ir papildoma veikla</em></p>
-              <ul>
-                <li>Užsiimu fotografija ir video montavimu kaip hobiu.</li>
-                <li>Kuriu vizualinį turinį sau ir draugams.</li>
-                <li>Domiuosi kūrybine vizualine raiška ir technine vaizdo apdorojimo puse.</li>
-              </ul>
-            </div><!-- End Resume Item -->
+  <h4>Fotografija ir video montavimas</h4>
+  <h5>Asmeniniai projektai</h5>
+  <p><em>Hobis ir papildoma veikla</em></p>
+  <ol class="custom-ol">
+    <li>Užsiimu fotografija ir video montavimu kaip hobiu.</li>
+    <li>Kuriu vizualinį turinį sau ir draugams.</li>
+    <li>Domiuosi kūrybine vizualine raiška ir technine vaizdo apdorojimo puse.</li>
+  </ol>
+</div>
+
 
           </div>
 
@@ -298,12 +355,15 @@
 
     </section><!-- /Resume Section -->
 
-    <section id="services" class="services section">
+    <section id="services" class="services section services-gradient">
 
   <div class="container section-title" data-aos="fade-up">
     <h2>Portfolio</h2>
     <p>Čia pateikiu pavyzdžius iš mano darbo su video, garsu ir kitais medijos failais.</p>
   </div>
+
+</section>
+
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row gy-4">
@@ -339,6 +399,39 @@
           Jūsų naršyklė nepalaiko audio žymos.
         </audio>
       </div>
+    <!-- ... tavo esami 3 stulpeliai ... -->
+
+    <!-- PASLAUGŲ LENTELĖ -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <table class="services-table">
+          <thead>
+            <tr>
+              <th>Paslauga</th>
+              <th>Aprašymas</th>
+              <th>Kaina</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fotografavimo paslaugos</td>
+              <td>Asmeninės, grupinės ir renginių fotosesijos.</td>
+              <td>nuo 60 €</td>
+            </tr>
+            <tr>
+              <td>Video montavimo paslaugos</td>
+              <td>Trumpi klipai, socialinių tinklų turinys, renginių montažas.</td>
+              <td>nuo 80 €</td>
+            </tr>
+            <tr>
+              <td>Namo elektros tinklo projektavimas ir pravedimas</td>
+              <td>Elektros tinklo perdavimo linija nuo transformatorinės į namus ir padavimas po pačius namus</td>
+              <td>nuo 500 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
     </div>
   </div>
