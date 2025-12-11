@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,14 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -46,11 +40,8 @@
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Dainius Eiva</h1>
     </a>
-
 
     <nav id="navmenu" class="navmenu">
       <ul>
@@ -58,6 +49,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> Apie</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Reziume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-bag navicon"></i> Services</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Kontaktai</a></li>
       </ul>
     </nav>
@@ -67,35 +59,35 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background fade-in-section">
 
       <img src="assets/img/po%20simtadienio.jpg"
-       alt=""
-       data-aos="fade-in"
-       style="
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         object-position: center 55%;
-         display: block;
-       ">
+           alt=""
+           data-aos="fade-in"
+           style="
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             object-position: center 55%;
+             display: block;
+           ">
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Dainius Eiva</h2>
+        <h2 class="animate-title">Dainius Eiva</h2>
       </div>
 
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section fade-in-section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Esu studentas, studijuojantis elektros energetikos inžineriją Vilnius Tech universitete. Baigiau Vilniaus Tuskulėnų gimnaziją. Domiuosi įvairiomis elektros energetikos bei elektros inžinerijos sritimis kaip: pcb kūrimas ir naudojimas, kompiuterių detalėmis bei surinkimu, lietuvos energetikos politika, energetikos ekonomika ir dabartiniais elektros gamybos bei perdavimo projektais. </p>
-      </div><!-- End Section Title -->
+        <p>Esu studentas, studijuojantis elektros energetikos inžineriją Vilnius Tech universitete. Baigiau Vilniaus Tuskulėnų gimnaziją. Domiuosi įvairiomis elektros energetikos bei elektros inžinerijos sritimis kaip: pcb kūrimas ir naudojimas, kompiuterių detalėmis bei surinkimu, lietuvos energetikos politika, energetikos ekonomika ir dabartiniais elektros gamybos bei perdavimo projektais.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -114,7 +106,15 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Gimimo diena:</strong> <span>28 Gruodžio 2005</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Svetainė:</strong> <span>www.example.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Telefono nr.:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Miestas/Šalis:</strong> <span>Vilnius, Lietuva</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>Domėjimosi sritys:</strong>
+                    <span>elektros energetika</span>
+                    <ul>
+                      <li>PCB kūrimas</li>
+                      <li>Kompiuterių surinkimas</li>
+                      <li>Lietuvos energetikos politika</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
               <div class="col-lg-6">
@@ -126,27 +126,27 @@
                 </ul>
               </div>
             </div>
-            <p class="py-3">
-              
-            </p>
           </div>
         </div>
 
       </div>
 
+      <!-- CSS FIGŪROS -->
+      <div class="about-shapes">
+        <span class="shape shape-circle"></span>
+        <span class="shape shape-square"></span>
+        <span class="shape shape-triangle"></span>
+      </div>
+
     </section><!-- /About Section -->
 
-    
-    </section><!-- /Stats Section -->
-
     <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
+    <section id="skills" class="skills section light-background fade-in-section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Įgūdžiai</h2>
         <p>reikalingi Įgūdžiai kuriuos naudoju atliekant darbą</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -159,21 +159,21 @@
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>PCB kūrimas</span> <i class="val">50%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>Elektros tinklų žinios</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
           </div>
 
@@ -184,21 +184,21 @@
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>Office365 žinios </span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
           </div>
 
@@ -208,14 +208,13 @@
 
     </section><!-- /Skills Section -->
 
-        <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- Resume Section -->
+    <section id="resume" class="resume section fade-in-section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Reziume</h2>
         <p>Trumpa informacija apie mane, kur mokausi, ką esu baigęs ir kuo domiuosi.</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -239,7 +238,7 @@
                 <li>Telefono numeris</li>
                 <li>El. paštas</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
 
             <h3 class="resume-title">Išsilavinimas</h3>
 
@@ -251,7 +250,7 @@
                 Pradėjau elektros energetikos studijas 2024 m. Domiuosi elektros energijos gamyba,
                 perdavimu ir paskirstymu, elektros įrenginiais ir energetikos sistemomis.
               </p>
-            </div><!-- End Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>Tuskulėnų gimnazija</h4>
@@ -261,7 +260,7 @@
                 Baigiau Tuskulėnų gimnaziją. Joje įgijau pagrindines žinias bei norą studijuoti elektros energijos kūrimą bei perdavimą, kuris lėmė pasirinkimą
                 elektros energetikos studijų krypties.
               </p>
-            </div><!-- End Resume Item -->
+            </div>
 
           </div>
 
@@ -277,18 +276,18 @@
                 <li>Aktyviai ieškau praktikos galimybių studijų metu.</li>
                 <li>Esu motyvuotas įgyti praktinių įgūdžių realiuose projektuose ir komandose.</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>Fotografija ir video montavimas</h4>
               <h5>Asmeniniai projektai</h5>
               <p><em>Hobis ir papildoma veikla</em></p>
-              <ul>
+              <ol class="custom-ol">
                 <li>Užsiimu fotografija ir video montavimu kaip hobiu.</li>
                 <li>Kuriu vizualinį turinį sau ir draugams.</li>
                 <li>Domiuosi kūrybine vizualine raiška ir technine vaizdo apdorojimo puse.</li>
-              </ul>
-            </div><!-- End Resume Item -->
+              </ol>
+            </div>
 
           </div>
 
@@ -298,139 +297,164 @@
 
     </section><!-- /Resume Section -->
 
-    <section id="services" class="services section">
+    <!-- Services Section -->
+    <section id="services" class="services section services-gradient fade-in-section">
 
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
-    <p>Čia pateikiu pavyzdžius iš mano darbo su video, garsu ir kitais medijos failais.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
-
-      <!-- Vietinis VIDEO -->
-      <div class="col-lg-4 col-md-6">
-        <h4>Vaizdo įrašas</h4>
-        <video controls class="img-fluid">
-          <source src="assets/media/7534244-hd_1920_1080_25fps.mp4" type="video/mp4">
-          Jūsų naršyklė nepalaiko video žymos.
-        </video>
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Paslaugos</h2>
+        <p>Čia pateikiu pavyzdžius iš mano darbo su video, garsu ir kitais medijos failais.</p>
       </div>
 
-      <!-- YouTube įrašas (EMBED) -->
-      <div class="col-lg-4 col-md-6">
-        <h4>YouTube įrašas</h4>
-         <iframe
-          width="100%"
-          height="234.5"
-          src="https://www.youtube.com/embed/BoUVIhtqjAw"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <h4>Vaizdo įrašas</h4>
+            <video controls class="img-fluid">
+              <source src="assets/media/7534244-hd_1920_1080_25fps.mp4" type="video/mp4">
+              Jūsų naršyklė nepalaiko video žymos.
+            </video>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4>YouTube įrašas</h4>
+            <iframe
+              width="100%"
+              height="234.5"
+              src="https://www.youtube.com/embed/BoUVIhtqjAw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4>Garso įrašas</h4>
+            <audio controls style="width: 100%;">
+              <source src="assets/media/quartz-clock-ticking-one-minute-253102.mp3" type="audio/mpeg">
+              Jūsų naršyklė nepalaiko audio žymos.
+            </audio>
+          </div>
+
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <table class="services-table">
+              <thead>
+                <tr>
+                  <th>Paslauga</th>
+                  <th>Aprašymas</th>
+                  <th>Kaina</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fotografavimo paslaugos</td>
+                  <td>Asmeninės, grupinės ir renginių fotosesijos.</td>
+                  <td>nuo 60 €</td>
+                </tr>
+                <tr>
+                  <td>Video montavimo paslaugos</td>
+                  <td>Trumpi klipai, socialinių tinklų turinys, renginių montažas.</td>
+                  <td>nuo 80 €</td>
+                </tr>
+                <tr>
+                  <td>Namo elektros tinklo projektavimas ir pravedimas</td>
+                  <td>Elektros tinklo perdavimo linija nuo transformatorinės į namus ir padavimas po pačius namus.</td>
+                  <td>nuo 500 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Garso įrašas -->
-      <div class="col-lg-4 col-md-6">
-        <h4>Garso įrašas</h4>
-        <audio controls style="width: 100%;">
-          <source src="assets/media/quartz-clock-ticking-one-minute-253102.mp3" type="audio/mpeg">
-          Jūsų naršyklė nepalaiko audio žymos.
-        </audio>
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background fade-in-section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Mano atlikti Matlab darbai.</p>
       </div>
 
-    </div>
-  </div>
+      <div class="container">
 
-</section>
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section light-background">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
-    <p>Mano atlikti Matlab darbai.</p>
-  </div><!-- End Section Title -->
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter=".filter-photo">Darbai</li>
+          </ul>
 
-  <div class="container">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter=".filter-photo">Darbai</li>
-      </ul><!-- End Portfolio Filters -->
-
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-        <!-- Darbas 1 -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/portfolio/1.png" class="img-fluid" alt="Darbas 1">
-            <div class="portfolio-info">
-              <h4>Darbas 1</h4>
-              <p>Mano atliktas fotografijos / vaizdo projektas.</p>
-              <a href="assets/img/portfolio/1.png"
-                 title="Darbas 1"
-                 data-gallery="portfolio-gallery-photo"
-                 class="glightbox preview-link">
-                <i class="bi bi-zoom-in"></i>
-              </a>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/1.png" class="img-fluid" alt="Darbas 1">
+                <div class="portfolio-info">
+                  <h4>Darbas 1</h4>
+                  <p>Mano atliktas fotografijos / vaizdo projektas.</p>
+                  <a href="assets/img/portfolio/1.png"
+                     title="Darbas 1"
+                     data-gallery="portfolio-gallery-photo"
+                     class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
 
-        <!-- Darbas 2 -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/portfolio/2.png" class="img-fluid" alt="Darbas 2">
-            <div class="portfolio-info">
-              <h4>Darbas 2</h4>
-              <p>Mano atliktas fotografijos / vaizdo projektas.</p>
-              <a href="assets/img/portfolio/2.png"
-                 title="Darbas 2"
-                 data-gallery="portfolio-gallery-photo"
-                 class="glightbox preview-link">
-                <i class="bi bi-zoom-in"></i>
-              </a>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/2.png" class="img-fluid" alt="Darbas 2">
+                <div class="portfolio-info">
+                  <h4>Darbas 2</h4>
+                  <p>Mano atliktas fotografijos / vaizdo projektas.</p>
+                  <a href="assets/img/portfolio/2.png"
+                     title="Darbas 2"
+                     data-gallery="portfolio-gallery-photo"
+                     class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
 
-        <!-- Darbas 3 -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/portfolio/3.png" class="img-fluid" alt="Darbas 3">
-            <div class="portfolio-info">
-              <h4>Darbas 3</h4>
-              <p>Mano atliktas fotografijos / vaizdo projektas.</p>
-              <a href="assets/img/portfolio/3.png"
-                 title="Darbas 3"
-                 data-gallery="portfolio-gallery-photo"
-                 class="glightbox preview-link">
-                <i class="bi bi-zoom-in"></i>
-              </a>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/3.png" class="img-fluid" alt="Darbas 3">
+                <div class="portfolio-info">
+                  <h4>Darbas 3</h4>
+                  <p>Mano atliktas fotografijos / vaizdo projektas.</p>
+                  <a href="assets/img/portfolio/3.png"
+                     title="Darbas 3"
+                     data-gallery="portfolio-gallery-photo"
+                     class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
             </div>
+
           </div>
-        </div><!-- End Portfolio Item -->
 
-      </div><!-- End Portfolio Container -->
+        </div>
 
-    </div>
+      </div>
 
-  </div>
-
-</section><!-- /Portfolio Section -->
-
+    </section><!-- /Portfolio Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section fade-in-section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Kontaktai</h2>
         <p>Norint susisiekti, prašom skambinti arba rašyti žinutę į šį numerį ar paštą</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -438,21 +462,27 @@
 
           <div class="col-lg-5">
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Telefono nr.</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefono nr.</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>El. paštas</h3>
-                  <p>dainius.eiva@stud.vilniustech.lt</p>
-                </div>
-              </div><!-- End Info Item -->
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>El. paštas</h3>
+                <p>dainius.eiva@stud.vilniustech.lt</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </section><!-- /Contact Section -->
 
@@ -465,20 +495,16 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
