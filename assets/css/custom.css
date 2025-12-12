@@ -591,3 +591,193 @@ a:active {
   50% { transform: translate(-28px, -26px); }
   100% { transform: translate(0, 0); }
 }
+
+/* ============================
+   KONTAKTŲ FORMA – PAPILDOMI STILIAI
+   ============================ */
+
+.contact .php-email-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.contact .php-email-form .form-control,
+.contact .php-email-form .form-range {
+  border-radius: 6px;
+}
+
+.contact .php-email-form .form-range {
+  width: 100%;
+}
+
+.contact-error {
+  display: none;
+  color: #df1529;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.contact .php-email-form .is-invalid {
+  border-color: #df1529 !important;
+  box-shadow: 0 0 0 1px rgba(223, 21, 41, 0.2);
+}
+
+#contact-submit[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+#contact-submit {
+  min-width: 140px;
+}
+
+/* Klausimų įvertinimo blokas */
+.rating-output {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #cfd8dc;
+}
+
+.rating-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  padding-top: 4px;
+}
+
+.rating-radio-group .form-check {
+  margin-right: 6px;
+}
+
+.rating-radio-group .form-check-input {
+  margin-right: 2px;
+}
+
+/* Rezultatų dėžutė žemiau formos */
+.contact-result {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background-color: rgba(81, 160, 197, 0.65);
+  box-shadow: 0 4px 12px rgba(170, 68, 68, 0.849);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  font-size: 0.95rem;
+}
+
+.contact-result p {
+  margin-bottom: 6px;
+}
+/* Sėkmingo išsiuntimo pranešimas rezultatų dėžutėje */
+.contact-result-success {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4caf50;
+}
+/* ============================
+   KORTELIŲ ŽAIDIMAS
+   ============================ */
+
+.memory-game .memory-controls {
+  background: rgba(146, 44, 146, 0.85);
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.memory-game .memory-controls h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.memory-game .memory-buttons .btn {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.memory-game .memory-stats h4 {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.memory-game .memory-stats p {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.memory-game .memory-message {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #4caf50;
+  min-height: 1.2em;
+}
+
+.memory-game .memory-grid {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* bus perrašoma JS */
+}
+
+.memory-card {
+  position: relative;
+  background: rgba(43, 75, 150, 0.9);
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.memory-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+}
+
+.memory-card-inner {
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.memory-card::after {
+  content: "?";
+  position: absolute;
+  font-size: 1.8rem;
+  color: rgba(148, 163, 184, 0.85);
+}
+
+.memory-card.is-open::after,
+.memory-card.is-matched::after {
+  content: "";
+}
+
+.memory-card.is-open .memory-card-inner,
+.memory-card.is-matched .memory-card-inner {
+  opacity: 1;
+}
+
+.memory-card.is-matched {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.9);
+}
+
+.memory-card.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .memory-game .memory-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .memory-card {
+    height: 70px;
+  }
+}
