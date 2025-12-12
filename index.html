@@ -50,7 +50,9 @@
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Reziume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-bag navicon"></i> Services</a></li>
+        <li><a href="#memory-game"><i class="bi bi-grid-3x3-gap navicon"></i> Kortelių žaidimas</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Kontaktai</a></li>
+
       </ul>
     </nav>
 
@@ -447,6 +449,58 @@
       </div>
 
     </section><!-- /Portfolio Section -->
+    <!-- Memory Game Section -->
+    <section id="memory-game" class="memory-game section fade-in-section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kortelių žaidimas</h2>
+        <p>Atminties kortelių (Flip Card Memory) žaidimas.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="memory-controls">
+              <h3>Nustatymai</h3>
+
+              <div class="mb-3">
+                <label for="memory-difficulty" class="form-label">Sunkumo lygis</label>
+                <select id="memory-difficulty" class="form-select">
+                  <option value="easy">Lengvas (4×3)</option>
+                  <option value="hard">Sunkus (6×4)</option>
+                </select>
+              </div>
+
+              <div class="memory-buttons mb-3">
+                <button id="memory-start" type="button" class="btn">Start</button>
+                <button id="memory-reset" type="button" class="btn btn-outline-light">Atnaujinti</button>
+              </div>
+
+              <div class="memory-stats">
+                <h4>Statistika</h4>
+                <p>Laikas: <span id="memory-time">0 s</span></p>
+                <p>Ėjimai: <span id="memory-moves">0</span></p>
+                <p>Sutapusios poros: <span id="memory-matches">0 / 0</span></p>
+                <p>Geriausias rezultatas (ėjimai): <span id="memory-best">–</span></p>
+              </div>
+
+              <div id="memory-message" class="memory-message"></div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <div id="memory-grid" class="memory-grid">
+              <!-- Kortelės sugeneruojamos JavaScript -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Memory Game Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section fade-in-section">
@@ -456,7 +510,7 @@
         <p>Norint susisiekti, prašom skambinti arba rašyti žinutę į šį numerį ar paštą</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
@@ -466,7 +520,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Telefono nr.</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+370 6xx xxxxx</p>
               </div>
             </div>
 
@@ -480,9 +534,117 @@
 
           </div>
 
+          <div class="col-lg-7">
+
+            <form id="contact-form" class="php-email-form" novalidate>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="firstName">Vardas *</label>
+                  <input type="text" name="firstName" id="firstName" class="form-control" required>
+                  <div class="contact-error" data-for="firstName"></div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="lastName">Pavardė *</label>
+                  <input type="text" name="lastName" id="lastName" class="form-control" required>
+                  <div class="contact-error" data-for="lastName"></div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email">El. paštas *</label>
+                  <input type="email" name="email" id="email" class="form-control" required>
+                  <div class="contact-error" data-for="email"></div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone">Telefono numeris *</label>
+                  <input type="text" name="phone" id="phone" class="form-control" required inputmode="numeric">
+                  <div class="contact-error" data-for="phone"></div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address">Adresas *</label>
+                  <input type="text" name="address" id="address" class="form-control" required>
+                  <div class="contact-error" data-for="address"></div>
+                </div>
+
+                <div class="col-12 pt-2">
+                  <h4 class="mb-2">Klausimų įvertinimas (1–10)</h4>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="rating1" class="form-label">Klausimas 1 (skaičius)</label>
+                  <input type="number" name="rating1" id="rating1" class="form-control" min="1" max="10" required>
+                  <div class="contact-error" data-for="rating1"></div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="rating2" class="form-label">Klausimas 2 (slankiklis)</label>
+                  <input type="range" name="rating2" id="rating2" class="form-range" min="1" max="10" value="5">
+                  <div class="rating-output">Pasirinkta: <span id="rating2-value">5</span></div>
+                  <div class="contact-error" data-for="rating2"></div>
+                </div>
+
+                <div class="col-md-4">
+                  <span class="form-label d-block">Klausimas 3 (radio)</span>
+                  <div class="rating-radio-group" id="rating3-group">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-1" value="1">
+                      <label class="form-check-label" for="rating3-1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-2" value="2">
+                      <label class="form-check-label" for="rating3-2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-3" value="3">
+                      <label class="form-check-label" for="rating3-3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-4" value="4">
+                      <label class="form-check-label" for="rating3-4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-5" value="5">
+                      <label class="form-check-label" for="rating3-5">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-6" value="6">
+                      <label class="form-check-label" for="rating3-6">6</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-7" value="7">
+                      <label class="form-check-label" for="rating3-7">7</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-8" value="8">
+                      <label class="form-check-label" for="rating3-8">8</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-9" value="9">
+                      <label class="form-check-label" for="rating3-9">9</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rating3" id="rating3-10" value="10">
+                      <label class="form-check-label" for="rating3-10">10</label>
+                    </div>
+                  </div>
+                  <div class="contact-error" data-for="rating3"></div>
+                </div>
+
+                <div class="col-12 text-end pt-2">
+                  <button type="submit" id="contact-submit" class="btn" disabled>Submit</button>
+                </div>
+              </div>
+             <div id="contact-result" class="contact-result mt-3"></div>
+            </form>
+
+          </div>
+
         </div>
 
       </div>
+
 
     </section><!-- /Contact Section -->
 
@@ -521,6 +683,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 
